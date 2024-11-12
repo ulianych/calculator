@@ -1,23 +1,25 @@
-# Calculator Application
+# Calculator
 
-This project is a simple calculator application built using Python's Tkinter library.
+This is a simple calculator application built using Python's Tkinter library. The calculator allows users to input four numbers and perform arithmetic operations on them. It supports various rounding methods and provides a formatted output of the calculation result.
+
+## Features
+- Input four numbers and select arithmetic operations for calculations.
+- Choose from different rounding methods such as Mathematical, Accountant, Truncation, or No Rounding.
+- Clear button to reset all input fields.
+- Calculate button to perform the expression evaluation.
+- Displays the final result with proper formatting and handles errors gracefully.
 
 ## How to Use
+1. Enter the four numbers in the input fields.
+2. Select the arithmetic operations for each pair of numbers.
+3. Choose a rounding method from the provided options.
+4. Click on the "Calculate" button to see the result.
+5. Use the "Clear" button to reset all fields for a new calculation.
 
-1. Enter mathematical expressions using the buttons provided.
-2. Press '=' to calculate the result.
-3. Press 'C' to clear the entry field.
-4. The calculator supports basic arithmetic operations (+, -, *, /), parentheses, and decimal numbers.
+## Rounding Methods
+- **Mathematical**: Rounds to the nearest integer using the ROUND_HALF_UP method.
+- **Accountant**: Rounds to the nearest even integer using the ROUND_HALF_EVEN method.
+- **Truncation**: Discards the decimal part of the number.
+- **No Rounding**: Displays the result without any rounding.
 
-## Code Overview
-
-The code utilizes Tkinter to create a GUI for the calculator. Here are some key points:
-
-- **on_click(event):** This function handles button clicks and performs appropriate actions based on the button pressed.
-- **calculate_result():** This function evaluates the expression entered and displays the result in the entry field.
-- **Root Configuration:** The root window is configured with a title, size of 500x500, and a pink background color.
-- **Entry Field:** An entry field is provided for input and output display.
-- **Buttons:** Buttons for numbers, operators, and special functions are created and configured to perform specific actions when clicked.
-- **Footer:** Displays information about the developer.
-
-Feel free to explore and use this simple calculator application!
+Feel free to explore and use this calculator for your arithmetic calculations!
